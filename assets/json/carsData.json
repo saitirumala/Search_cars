@@ -1,0 +1,45 @@
+[
+	{
+		"make": "Toyota",
+		"model": "Corolla",
+		"color": ["white", "black", "blue", "red"],
+		"type": "sedan",
+		"transmission": {
+			"type": "MANUAL",
+			"wheels": "4X4"
+		},
+		"image_url": "../assets/images/corolla.jfif",
+		"interior": {
+			"color": "Black",
+			"seat_color": "red",
+			"seat_type": "LEATHER"
+		},
+		"description": "This is a sedan car with spacious room inside and gives best milage",
+		"year": 2018,
+		"id": 0001,
+
+	},
+	{
+		"make": "Toyota",
+		"model": "Innova",
+		"color": ["white", "black", "blue", "red"],
+		"type": "SUV",
+		"transmission": {
+			"type": "MANUAL",
+			"wheels": "4X4"
+		},
+		"image_url": "",
+		"interior": {
+			"color": "Black",
+			"seat_color": "red",
+			"seat_type": "LEATHER"
+		},
+		"description": "This is a SUV car with spacious room inside and gives best milage",
+		"year": [2018, 2015, 2017],
+		"id": 0002,
+	},
+	{
+		
+	}
+
+]
