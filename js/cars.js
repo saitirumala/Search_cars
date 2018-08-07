@@ -195,7 +195,7 @@ var carsData =[
 
     function  displayCars(data) {
       for(var i=0;i<data.length;i++){
-    document.getElementById("DisplayCars").innerHTML+='<div style="width:350px;margin:30px 5px 10px 5px;float:left;height:690px;border:1px solid #9d0028;color:#850026">'+
+    document.getElementById("DisplayCars").innerHTML+='<div style="width:350px;margin:30px 5px 10px 20px;float:left;height:690px;border:1px solid #9d0028;color:#850026">'+
         '<img style="height:200px; width:100%;alt:Developer;border:1px solid #9d0028;margin-bottom:20px; " src="'+data[i].img_url+'">' +
         '<h5 style="margin:15px 10px 15px 10px;">Make: '+data[i].make+'</h5>'+
         '<h5 style="margin:15px 10px 15px 10px;">Model: '+data[i].model+'</h5>'+
