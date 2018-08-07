@@ -213,27 +213,24 @@ var carsData =[
        
        	'</div>'
       }
+}
 
-  }
+displayCars(carsData);
+  function searchCars(){
+  	var input1= document.getElementById('textInput1').value;
+  	var filteredCars=[];
+  	for(var i=0; i<carsData.length; i++){
+  		if(input1 == carsData[i].make || input1 == carsData[i].model){
+  			filteredCars.push(carsData[i]);
+  		}
+	  }
 
-  displayCars(carsData);
-
-function searchCars(){
-	var input1= document.getElementById('textInput1').value;
-	var filteredCars=[];
-	for(var i=0; i<carsData.length; i++){
-		if(input1 == carsData[i].make || input1 == carsData[i].model){
-			filteredCars.push(carsData[i]);
-		}
-	}
-
-	document.getElementById('DisplayCars').innerHTML = '';
-	if(filteredCars.length == 0){
-		document.getElementById('DisplayCars').innerHTML = '<h1>No items to Display</h1>';
-	}else{
-		displayCars(filteredCars);
-	}
-
+	  document.getElementById('DisplayCars').innerHTML = '';
+	  if(filteredCars.length == 0){
+		  document.getElementById('DisplayCars').innerHTML = '<h1>No items to Display</h1>';
+	  }else{
+		  displayCars(filteredCars);
+	  }
 }
 
 function submitData(){
@@ -293,8 +290,9 @@ function submitData(){
 
     alert('Error: please enter valid data in all fields..');
   }
-
-
+}
+function insertData(){
+  window.open("https://saitirumala.github.io/Search_cars/InsertingCars.html");
 }
         
       
