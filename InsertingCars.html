@@ -4,6 +4,7 @@
 		<title>
 			Inserting of cars data
 		</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 			<style type="text/css">
 		.nav_bar>p{
 			padding: 50px 30px 30px 200px;
@@ -13,7 +14,7 @@
 			border-top:10px solid white;
 		}
 			.main_form>p{
-				margin-right: 350px;
+				margin-right: 110px;
 				border:1px solid black;
 				float: right;
 				padding: 20px;
@@ -28,50 +29,70 @@
 			input{
 				border:1px solid black;
 				height: 20px;
-
+				color: black;
 			}
 			button{
 				height: 22px;
 			}
 			h3{
-				margin-left: 530px;
+				margin-left: 0px;
 				color: white;
 			}
 		</style>
 	</head>
 	<body style ="background-color: black;">
-		<img src ="images/carslogo.png" style="width: 200px;height:150px;float:right;position: absolute; ">
-		<div class ="logos">
-			<img style="height: 60px;width: 60px;position: absolute;margin: 50px 10px 10px 700px;" src ="images/symbol1.png">
-			<img style="height: 60px;width: 80px;position: absolute;margin: 50px 10px 10px 780px;" src ="images/symbol2.png">
-			<img style="height: 60px;width: 60px;position: absolute;margin: 50px 10px 10px 880px;" src ="images/symbol3.png">
-			<img style="height: 60px;width: 60px;position: absolute;margin: 50px 10px 10px 950px;" src ="images/symbol4.png">
-			<img style="height: 60px;width: 60px;position: absolute;margin: 50px 10px 10px 1020px;" src ="images/symbol5.png">
-			<img style="height: 85px;width: 85px;position: absolute;margin: 40px 10px 10px 1080px;" src ="images/symbol6.png">
-			<img style="height: 60px;width: 60px;position: absolute;margin: 50px 10px 10px 1160px;" src ="images/symbol7.png">
-        </div>
-		<div class="nav_bar" style="background-color:#ca002c;height: 130px; width: 100%; margin:0px;">
-		 <p  style="color: white;">Best collection of Cars</p>
-	    </div>
-	    <img style="height: 250px;width:330px; position:absolute;float:left;margin:140px 0px 10px 0px; " src ="images/carlogo1.png">
-		<img style="height: 250px; width:350px; position: absolute;margin:100px 0px 10px 980px; " src ="images/carslogo2.png">
-		<form class="main_form" id="insertCar_form" name="CarData">
-		 	<h3>INSERTING OF CAR DATA</h3>
-		 	<p><B>Make:&ensp; &emsp;&emsp;&emsp;&emsp;&ensp;<input id ="make" name="make" type="text" placeholder=" Make.." value=""></input>&ensp;&nbsp;
-		 	Model:&nbsp;&emsp;&emsp;&emsp;&emsp;&ensp; <input id="model" name="model" type="text" placeholder=" Model.." value=""></input><br><br>
-		 	Mileage:&ensp;&emsp;&emsp;&emsp;&ensp; <input id ="mileage" name="mileage" type="text" placeholder=" Mileage.." value=""></input>&ensp;&nbsp;
-		 	Engine Displ :&nbsp;&emsp;&ensp; <input id ="EngineDispl" name="EngineDispl" type="text" placeholder=" Engine Displ.." value=""></input><br><br>
-		 	Transmission:&ensp;&emsp;&nbsp; <input id ="Transmission" name="Transmission" type="text" placeholder=" Transmission.." value=""></input>&ensp;&nbsp;
-		 	Fuel Type:&emsp;&emsp;&emsp;&nbsp; <input id ="FuelType" name="FuelType " type="text" placeholder=" Fuel Type.." value=""> </input><br><br>
-		 	Boot Space:&ensp;&nbsp;&emsp;&emsp; <input id ="BootSpace" name="BootSpace" type="text" placeholder=" Boot Space.." value=""></input>&ensp;&nbsp; 
-		 	Power Windows:&ensp; <input id ="PowerWindows" name="PowerWindows" type="text" placeholder=" Power Windows.." value=""></input> <br><br>
-		 	Airbags: &ensp;&ensp;&emsp;&emsp;&emsp;<input id ="Airbags" name="Airbags" type="text" placeholder=" Airbags.." value=""></input>&ensp;&ensp; 
-		 	ABS: &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<input id ="ABS" name="ABS" type="text" placeholder=" ABS.." value=""></input> <br><br>
-		 	Central Locking:&nbsp; <input id ="CentralLocking" name="CentralLocking" type="text" placeholder=" Central Locking.." value=""></input>&emsp;
-		 	Fog Lamps:&emsp;&emsp;&ensp; <input id ="FogLamps" name="FogLamps" type="text" placeholder=" Fog Lamps.." value=""></input> <br><br>
-		 	Origin:</B> &emsp;&emsp;&emsp;&emsp;&ensp;<input id ="Origin" name="Origin" type="text" placeholder=" Origin.." value=""></input></p>
-		 	<button style="margin-left: 630px; border-radius:10px;border:2px solid #9d0028;background-color: white;" type="button" onclick="submitData();"><B>Submit</B></button>
-		</form>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-inverse" style="background-color:#ca002c;height: 130px; margin:0px;">
+					<img src ="images/carslogo.png" style="width: 200px;height:150px;float:right;position: absolute; ">
+					<p style="padding: 50px 30px 30px 220px;color: white;font-size: 50px;margin: 0px;border-top:10px solid white;">Best collection of Cars</p>	    
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+					<input style="margin-top: 20px;margin-left:30px;border:2px solid #9d0028;height: 40px;width: 250px;" id ="textInput1" type="text" placeholder=" Search for Cars..." value="" />
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-4 col-xs-4">
+					<button style="margin-top: 20px;border-radius: 10px;border:2px solid #9d0028 ;background-color: white;height: 40px;width: 100px;" type="button" onclick="searchCars();"><B>Search</B></button>
+				</div>
+			</div>
+		</div>
+        <div class="container-fluid">
+        	<div class="row">
+        		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        			<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+						<form class="main_form" id="insertCar_form" name="CarData">
+						 	<h3>INSERTING OF CAR DATA :</h3><br><br>
+						 	<p><B>Make:&ensp; &emsp;&emsp;&emsp;&emsp;&ensp;<input id ="make" name="make" type="text" placeholder=" Make.." value=""></input>&ensp;&nbsp;
+						 	Model:&nbsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp; <input id="model" name="model" type="text" placeholder=" Model.." value=""></input><br><br>
+						 	Mileage:&ensp;&emsp;&emsp;&emsp;&ensp; <input id ="mileage" name="mileage" type="text" placeholder=" Mileage.." value=""></input>&ensp;&nbsp;
+						 	Engine Displ :&nbsp;&emsp;&ensp; <input id ="EngineDispl" name="EngineDispl" type="text" placeholder=" Engine Displ.." value=""></input><br><br>
+						 	Transmission:&emsp;&nbsp; <input id ="Transmission" name="Transmission" type="text" placeholder=" Transmission.." value=""></input>&ensp;&nbsp;
+						 	Fuel Type:&emsp;&emsp;&emsp;&ensp; <input id ="FuelType" name="FuelType " type="text" placeholder=" Fuel Type.." value=""> </input><br><br>
+						 	Boot Space:&nbsp;&emsp;&emsp; <input id ="BootSpace" name="BootSpace" type="text" placeholder=" Boot Space.." value=""></input>&ensp;&nbsp; 
+						 	Power Windows:&ensp; <input id ="PowerWindows" name="PowerWindows" type="text" placeholder=" Power Windows.." value=""></input> <br><br>
+						 	Airbags: &ensp;&ensp;&emsp;&emsp;&emsp;<input id ="Airbags" name="Airbags" type="text" placeholder=" Airbags.." value=""></input>&ensp;&ensp; 
+						 	ABS: &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&ensp;<input id ="ABS" name="ABS" type="text" placeholder=" ABS.." value=""></input> <br><br>
+						 	Central Locking: <input id ="CentralLocking" name="CentralLocking" type="text" placeholder=" Central Locking.." value=""></input>&emsp;
+						 	Fog Lamps:&emsp;&emsp;&ensp;&nbsp; <input id ="FogLamps" name="FogLamps" type="text" placeholder=" Fog Lamps.." value=""></input> <br><br>
+						 	Origin:</B> &nbsp;&emsp;&emsp;&emsp;&emsp;&ensp;<input style="width: 190px; font-weight: bold;" id ="Origin" name="Origin" type="text" placeholder=" Origin.." value=""></input></p>
+						</form> 
+						<div class="row">	
+						    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						 	    <button class="center-block"style="padding-left:20px;padding-right:20px;border-radius:10px;border:2px solid #9d0028;background-color:white;height: 30px;"type="button"onclick="submitData();"><B>Submit</B></button>
+						    </div>   
+					    </div>	
+					</div>	
+			    </div>
+			</div>	
+		</div>
+		<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 container" style="border-radius:25px;
+		 border:5px solid #9d0028;background-color: white;margin-top: 30px;margin-left:45px;">
+		 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-left: 25px;" id ="DisplayCars">	
+		 	</div>
+		</div>	
 		<script src ="js/cars.js"></script>
 	</body>
 </html>

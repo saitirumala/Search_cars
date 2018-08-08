@@ -285,7 +285,6 @@ function submitData(){
       document.getElementById('Origin').value="";
 
       alert('new car data has been added successfully..!');
-
   }else{
 
     alert('Error: please enter valid data in all fields..');
