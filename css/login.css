@@ -4,7 +4,7 @@ body{
 }
 .container{
 	background-position: center;
-	margin-top: 100px;
+	margin-top: 80px;
 }
 .login_background{
 	background-color: white;
@@ -45,6 +45,7 @@ form{
 .button{
 	padding-left: 20px;
 	padding-right: 20px;
-	margin-top:30px;
+	margin-top:20px;
 	font-size: 30px
 }
+
