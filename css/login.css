@@ -2,8 +2,10 @@ body{
 	background-image: url("../images/loginbg.jpg");
 	background-repeat: no-repeat;
 }
-
-
+.container{
+	background-position: center;
+	margin-top: 130px;
+}
 .login_background{
 	background-color: white;
 	margin: 0px auto;
@@ -12,19 +14,11 @@ body{
 	opacity:0.9;
 }
 
-@media screen and (min-width: 601px) {
-    .login_background {
-        top: 150px;
-    }
+@media screen and (min-width: 1200px){
+	.form-signin{
+	margin-left: 400px;	
+	}
 }
-
-@media screen and (max-width: 600px) {
-    .login_background {
-        top: 300px;
-    }
-}
-
-
 .login-form{
 	opacity:1;
 }
@@ -40,12 +34,13 @@ body{
 
 }
 form{
-	margin-top: 50px;
+	margin-top: 0px;
 }
 .form-control{
 	height: 40px;
 }
-.btn.btn-primary{
-	margin-top: 30px;
-	margin-left: 150px;
+.button{
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top:30px;
 }

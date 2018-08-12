@@ -195,22 +195,21 @@ var carsData =[
 
     function  displayCars(data) {
       for(var i=0;i<data.length;i++){
-    document.getElementById("DisplayCars").innerHTML+='<div style="width:350px;margin:30px 5px 10px 20px;float:left;height:690px;border:1px solid #9d0028;color:#850026">'+
-        '<img style="height:200px; width:100%;alt:Developer;border:1px solid #9d0028;margin-bottom:20px; " src="'+data[i].img_url+'">' +
-        '<h5 style="margin:15px 10px 15px 10px;">Make: '+data[i].make+'</h5>'+
-        '<h5 style="margin:15px 10px 15px 10px;">Model: '+data[i].model+'</h5>'+
-        '<h5 style="margin:15px 10px 15px 10px;">Mileage: '+data[i].mileage+'</h5>'+
-        '<h5 style="margin:15px 10px 15px 10px;">Engine Displ: '+data[i].engine_Displ+'</h5>'+
-        '<h5 style="margin:15px 10px 15px 10px;">Transmission: '+data[i].transmission+'</h5>'+
-        '<h5 style="margin:15px 10px 15px 10px;">Fuel Type: '+data[i].fuel_Type+'</h5>'+
-        '<h5 style="margin:15px 10px 15px 10px;">boot Space: '+data[i].boot_Space+'</h5>'+
-        '<h5 style="margin:15px 10px 15px 10px;">Power Windows: '+data[i].power_Windows+'</h5>'+
-        '<h5 style="margin:15px 10px 15px 10px;">Airbags: '+data[i].airbags+'</h5>'+
-        '<h5 style="margin:15px 10px 15px 10px;">ABS: '+data[i].abs+'</h5>'+
-        '<h5 style="margin:15px 10px 15px 10px;">Central Locking: '+data[i].central_Locking+'</h5>'+
-        '<h5 style="margin:15px 10px 15px 10px;">Fog Lamps: '+data[i].fog_Lamps+'</h5>'+
-        '<h5 style="margin:15px 10px 15px 10px;">Origin: '+data[i].origin+'</h5>'+
-       
+    document.getElementById("DisplayCars").innerHTML+='<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-top:30px;margin-left:0px;height:720px;border:1px solid #9d0028;color:#850026">'+
+        '<img class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:300px;alt:Developer;margin-left:0px;border:1px solid #9d0028;margin-bottom:20px; " src="'+data[i].img_url+'">' +
+        '<h5 style="margin:15px 10px 15px 10px;font-weight:bold;">Make: '+data[i].make+'</h5>'+
+        '<h5 style="margin:15px 10px 15px 10px;font-weight:bold;">Model: '+data[i].model+'</h5>'+
+        '<h5 style="margin:15px 10px 15px 10px;font-weight:bold;">Mileage: '+data[i].mileage+'</h5>'+
+        '<h5 style="margin:15px 10px 15px 10px;font-weight:bold;">Engine Displ: '+data[i].engine_Displ+'</h5>'+
+        '<h5 style="margin:15px 10px 15px 10px;font-weight:bold;">Transmission: '+data[i].transmission+'</h5>'+
+        '<h5 style="margin:15px 10px 15px 10px;font-weight:bold;">Fuel Type: '+data[i].fuel_Type+'</h5>'+
+        '<h5 style="margin:15px 10px 15px 10px;font-weight:bold;">boot Space: '+data[i].boot_Space+'</h5>'+
+        '<h5 style="margin:15px 10px 15px 10px;font-weight:bold;">Power Windows: '+data[i].power_Windows+'</h5>'+
+        '<h5 style="margin:15px 10px 15px 10px;font-weight:bold;">Airbags: '+data[i].airbags+'</h5>'+
+        '<h5 style="margin:15px 10px 15px 10px;font-weight:bold;font-weight:bold;">ABS: '+data[i].abs+'</h5>'+
+        '<h5 style="margin:15px 10px 15px 10px;font-weight:bold;">Central Locking: '+data[i].central_Locking+'</h5>'+
+        '<h5 style="margin:15px 10px 15px 10px;font-weight:bold;">Fog Lamps: '+data[i].fog_Lamps+'</h5>'+
+        '<h5 style="margin:15px 10px 15px 10px;font-weight:bold;">Origin: '+data[i].origin+'</h5>'+
        	'</div>'
       }
 }
@@ -286,12 +285,11 @@ function submitData(){
 
       alert('new car data has been added successfully..!');
   }else{
-
     alert('Error: please enter valid data in all fields..');
   }
 }
 function insertData(){
-  window.open("https://saitirumala.github.io/Search_cars/InsertingCars.html");
+  location.replace("https://saitirumala.github.io/Search_cars/InsertingCars.html");
 }
         
       
