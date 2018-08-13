@@ -5,9 +5,11 @@
 			Cars home page
 		</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<style type="text/css">
-			.navbar .navbar-inverse{
-				background-color: red;
+		<style>
+			@media screen and (min-width: 360px){
+				.searchButton{
+					margin-left: 0px;
+				}
 			}
 		</style>
 	</head>
@@ -22,14 +24,14 @@
 		</div>
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 container">
 			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
-					<input style="margin-top: 20px;margin-left:30px;border:2px solid #9d0028;height: 40px;width: 250px;" id ="textInput1" type="text" placeholder=" Search for Cars..." value="" />
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 shearchText">
+					<input style="margin-top: 20px;border:2px solid #9d0028;height: 40px;width: 300px;margin-left: 20px; font-weight: bold;font-size:25px; " id ="textInput1" type="text" placeholder=" Search for Cars..." value="" />
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-4 col-xs-4">
-					<button style="margin-top: 20px;border-radius: 10px;border:2px solid #9d0028 ;background-color: white;height: 40px;width: 100px;" type="button" onclick="searchCars();"><B>Search</B></button>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 searchButton">
+					<button style="margin-top: 20px;border-radius: 10px;border:2px solid #9d0028 ;background-color: white;height: 40px;width: 100px;font-size: 25px;" type="button" onclick="searchCars();"><B>Search</B></button>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
-					<button style="margin-top: 20px;border-radius: 10px;border:2px solid #9d0028 ;background-color: white;height: 40px;margin-left: 100px;" type="button" onclick="insertData();"><B>Insert Car Data</B></button>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 insertButton">
+					<button style="margin-top: 20px;border-radius: 10px;border:2px solid #9d0028 ;background-color: white;height: 40px;margin-left: 100px;font-size: 25px;" type="button" onclick="insertData();"><B>Insert Car Data</B></button>
 				</div>
 			</div>
 		</div>
